@@ -1,0 +1,46 @@
+@media screen and (min-width: 700px) {
+    .header-container {
+        flex-wrap: nowrap;
+    }
+
+    .site-title {
+        font-size: 2rem;
+    }
+
+
+
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+
+        flex-direction: row;
+
+        width: auto;
+    }
+
+    nav a {
+        padding: 15px 25px;
+    }
+
+    main h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 25px;
+    }
+
+    figure {
+        transition: transform 0.2s ease;
+    }
+
+    figure:hover {
+        transform: translateY(-4px);
+    }
+}

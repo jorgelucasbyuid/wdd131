@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    background-color: #f4f6f8;
+}
+
+header {
+    background-color: #1f4e70;
+    color: white;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+
+    color: white;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    padding: 5px;
+}
+
+
+nav {
+    display: none;
+
+    flex-direction: column;
+
+    width: 100%;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    padding: 15px;
+
+    font-weight: 500;
+
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #315d7e;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+    padding: 0 20px;
+}
+
+main h1 {
+    margin: 0 0 30px;
+
+    text-align: center;
+
+    color: #333;
+}
+
+
+.temple-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+}
+
+
+figure {
+    margin: 0;
+
+    background-color: white;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+figure img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 15px;
+
+    text-align: center;
+
+    color: #1f4e70;
+
+    font-weight: 700;
+}
+
+
+
+
+footer {
+    margin-top: 30px;
+
+    padding: 22px;
+
+    text-align: center;
+
+    background-color: #1f4e70;
+
+    color: white;
+}
+
+footer p {
+    margin: 8px;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+}
