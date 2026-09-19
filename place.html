@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chile | WDD 131</title>
+
+    <meta name="author" content="Jorge Lucas da Silva Neto">
+    <meta name="description" content="A page about Chile for WDD 131 - Dynamic Web Fundamentals.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <span class="site-title">Chile</span>
+            <nav>
+                <a href="place.html">Home</a>
+                <a href="#weather">Weather</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Chile</h1>
+                <p>Chile, the country I call home today.</p>
+            </div>
+
+            <img
+                class="hero-image"
+                src="images/santiagohome-desktop.webp"
+                srcset="images/santiagohome-mobile.webp 720w, images/santiagohome-desktop.webp 1600w"
+                sizes="100vw"
+                alt="View of Santiago, Chile">
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Chile</h2>
+            <p>
+                From the Atacama Desert to the glaciers of Patagonia, Chile brings together
+                extreme landscapes within a single territory, nestled between the Andes
+                Mountains and the Pacific Ocean. It was against this backdrop, with Santiago
+                as the setting, that I found the place I now call home.
+            </p>
+        </section>
+
+        <section id="weather" class="weather">
+            <div class="weather-heading">
+                <h2>Weather</h2>
+                <img class="weather-icon-mobile" src="images/weather-icon.svg" alt="" aria-hidden="true">
+            </div>
+
+            <div class="weather-details">
+                <p>Temperature: <span id="temperature">12</span>°C</p>
+                <p>Wind: <span id="wind-speed">20</span> km/h</p>
+                <p>Feels-like temperature: <span id="wind-chill">--</span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jorge Lucas da Silva Neto | Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
