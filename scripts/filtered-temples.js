@@ -129,13 +129,14 @@ function applyFilter(filter) {
     createTempleCards(filteredTemples);
 }
 
-const filterButtons = document.querySelectorAll(".filter-btn");
+const filterLinks = document.querySelectorAll(".filter-btn");
 
-filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-        filterButtons.forEach((btn) => btn.classList.remove("active"));
-        button.classList.add("active");
-        applyFilter(button.dataset.filter);
+filterLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        filterLinks.forEach((l) => l.classList.remove("active"));
+        link.classList.add("active");
+        applyFilter(link.dataset.filter);
     });
 });
 

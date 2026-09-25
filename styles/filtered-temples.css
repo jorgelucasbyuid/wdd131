@@ -67,6 +67,9 @@ nav.open {
     font-family: inherit;
     font-size: 1rem;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
     transition: background-color 0.2s ease;
 }
 
