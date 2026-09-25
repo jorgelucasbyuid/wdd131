@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album | WDD 131</title>
+
+    <meta name="author" content="Jorge Lucas da Silva Neto">
+    <meta name="description" content="Enhanced temple picture album with dynamic JavaScript filtering for WDD 131.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <span class="site-title">Temple Album</span>
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <button class="filter-btn active" data-filter="home" type="button">Home</button>
+                <button class="filter-btn" data-filter="old" type="button">Old</button>
+                <button class="filter-btn" data-filter="new" type="button">New</button>
+                <button class="filter-btn" data-filter="large" type="button">Large</button>
+                <button class="filter-btn" data-filter="small" type="button">Small</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h1>Temple Album</h1>
+
+        <section class="temple-grid" id="temple-grid">
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jorge Lucas da Silva Neto | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
