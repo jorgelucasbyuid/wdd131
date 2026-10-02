@@ -1,0 +1,135 @@
+:root {
+  --color-primary: #16243D;   /* deep blue */
+  --color-accent: #C9A66B;    /* gold */
+  --color-bg: #F6F1E7;        /* cream */
+  --color-secondary: #5C1B2E; /* wine */
+  --font-heading: 'Fraunces', serif;
+  --font-body: 'Work Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: var(--font-heading);
+  margin: 0 0 0.25rem 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+  color: var(--color-accent);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  color: var(--color-secondary);
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.4rem;
+}
+
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.swatch {
+  flex: 1 1 160px;
+  border-radius: 6px;
+  padding: 1.5rem 1rem;
+  color: var(--color-bg);
+  font-size: 0.9rem;
+}
+
+.swatch strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.swatch.primary { background-color: var(--color-primary); }
+.swatch.accent { background-color: var(--color-accent); color: var(--color-primary); }
+.swatch.secondary { background-color: var(--color-secondary); }
+.swatch.bg { background-color: var(--color-bg); color: var(--color-primary); border: 1px solid var(--color-primary); }
+
+.type-sample {
+  background-color: #fff;
+  border: 1px solid var(--color-accent);
+  border-radius: 6px;
+  padding: 1.2rem;
+  margin-top: 1rem;
+}
+
+.type-sample .heading-font {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  margin: 0 0 0.3rem 0;
+}
+
+.type-sample .body-font {
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+.wireframes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+  align-items: flex-start;
+}
+
+.wireframe-block figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+svg {
+  background-color: #fff;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  font-size: 0.85rem;
+}
