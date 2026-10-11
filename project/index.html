@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Divisor Turismo offers guided tours in Santiago, Chile, for Brazilian travelers, led by a Sernatur-certified guide who speaks Portuguese.">
+  <meta name="author" content="Jorge Lucas da Silva">
+  <title>Divisor Turismo | Guided Tours in Santiago, Chile</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-text">Divisor Turismo <small>seu roteiro, nossa história</small></span>
+    </a>
+    <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"></button>
+    <nav id="main-nav" class="main-nav">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="tours.html">Tours</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <img src="images/hero-santiago.webp" alt="Santiago skyline with the snow-capped Andes in the background" width="1600" height="900" fetchpriority="high">
+      <div class="hero-text">
+        <p id="greeting" class="eyebrow">Welcome to Santiago</p>
+        <h1>Discover Chile with a guide who speaks your language</h1>
+        <a class="button" href="tours.html">See the tours</a>
+      </div>
+    </section>
+
+    <section class="intro wrapper">
+      <h2>Your itinerary, our story</h2>
+      <p>Divisor Turismo is a guided tour service created for Brazilian travelers visiting Santiago. Every tour is led in Portuguese, so you can ask questions, understand the history behind each stop, and enjoy the city without a language barrier.</p>
+      <p>The name comes from the Andes, the great natural divide between Chile and Argentina. The mountains are always on the horizon in Santiago, and many of our tours take you right up to them.</p>
+    </section>
+
+    <section class="wrapper">
+      <h2>Why travel with us</h2>
+      <ul class="benefits">
+        <li>
+          <h3>Guided in Portuguese</h3>
+          <p>No translation apps and no missed stories. Every explanation is given in clear Brazilian Portuguese.</p>
+        </li>
+        <li>
+          <h3>Certified guide</h3>
+          <p>Tours are led by a Sernatur-certified guide who lives in Santiago and knows the city and the mountains well.</p>
+        </li>
+        <li>
+          <h3>Flexible itineraries</h3>
+          <p>Traveling with family or a large group? Tours can be combined and adjusted to fit the days you have in Chile.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="wrapper">
+      <h2>Featured tours</h2>
+      <div id="featured-tours" class="tour-grid"></div>
+      <p class="center"><a class="button" href="tours.html">View all tours</a></p>
+    </section>
+
+    <section class="about wrapper">
+      <img src="images/jorge.webp" alt="Tour guide Jorge Lucas da Silva in downtown Santiago" width="400" height="500" loading="lazy">
+      <div>
+        <h2>Meet your guide</h2>
+        <p>Hi, I am Jorge Lucas da Silva, a Brazilian from Sergipe who made Santiago my home. As a bilingual guide, I welcome visitors from Brazil every season and show them the history, food, and landscapes that made me fall in love with Chile.</p>
+        <p>I also train new guides during the high season, so every tour reflects the same care for detail and service.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Ready to plan your days in Santiago?</h2>
+      <p>Tell us your travel dates and group size, and you will receive a personalized quote.</p>
+      <a class="button" href="contact.html">Request a quote</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Divisor Turismo | Jorge Lucas da Silva | Santiago, Chile</p>
+    <p>Instagram: @jorgeguianochile</p>
+    <p><a href="references.html">References</a></p>
+    <p id="last-modified"></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a personalized quote for guided tours in Santiago, Chile, with Divisor Turismo. Share your dates, group size, and preferred tour.">
+  <meta name="author" content="Jorge Lucas da Silva">
+  <title>Contact | Divisor Turismo</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-text">Divisor Turismo <small>seu roteiro, nossa história</small></span>
+    </a>
+    <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"></button>
+    <nav id="main-nav" class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="tours.html">Tours</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrapper">
+
+    <h1>Request a quote</h1>
+    <p>Fill in the form below and you will receive a personalized quote on WhatsApp or by email, usually within one business day.</p>
+
+    <form class="quote-form" action="thanks.html" method="get">
+
+      <fieldset>
+        <legend>About you</legend>
+
+        <label for="full-name">Full name *</label>
+        <input type="text" id="full-name" name="name" autocomplete="name" required minlength="2">
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+
+        <label for="phone">WhatsApp number</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+55 79 99999 9999" pattern="\+?[0-9 ]{8,20}" title="Numbers and spaces only, with an optional + at the start">
+      </fieldset>
+
+      <fieldset>
+        <legend>Your trip</legend>
+
+        <label for="tour">Tour of interest *</label>
+        <select id="tour" name="tour" required>
+          <option value="" disabled selected>Choose a tour</option>
+        </select>
+
+        <label for="tour-date">Preferred date *</label>
+        <input type="date" id="tour-date" name="date" required>
+
+        <label for="group-size">Number of travelers *</label>
+        <input type="number" id="group-size" name="travelers" min="1" max="40" value="2" required>
+
+        <label for="message">Anything else we should know?</label>
+        <textarea id="message" name="message" rows="4" maxlength="500"></textarea>
+      </fieldset>
+
+      <input type="submit" class="button" value="Send request">
+    </form>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Divisor Turismo | Jorge Lucas da Silva | Santiago, Chile</p>
+    <p>Instagram: @jorgeguianochile</p>
+    <p><a href="references.html">References</a></p>
+    <p id="last-modified"></p>
+  </footer>
+
+</body>
+</html>
