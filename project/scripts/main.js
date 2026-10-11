@@ -1,8 +1,3 @@
-/* Divisor Turismo - main script
-   Loaded on every page with "defer". Each feature checks whether its
-   element exists on the current page before running. */
-
-// ---------- Data (array of objects) ----------
 const tours = [
   {
     id: `city-tour`,
@@ -78,7 +73,6 @@ const storageKeys = {
   requests: `divisor-requests`
 };
 
-// ---------- localStorage helpers ----------
 function getFavorites() {
   try {
     return JSON.parse(localStorage.getItem(storageKeys.favorites)) || [];
@@ -95,7 +89,6 @@ function toggleFavorite(tourId) {
   localStorage.setItem(storageKeys.favorites, JSON.stringify(updated));
 }
 
-// ---------- Tour cards ----------
 function buildTourCard(tour, favorites) {
   const isSaved = favorites.includes(tour.id);
   const includesList = tour.includes.map((item) => `<li>${item}</li>`).join(``);
@@ -140,7 +133,6 @@ function filterTours(filter) {
   return tours.filter((tour) => tour.category === filter);
 }
 
-// ---------- Shared: menu and footer ----------
 function setupMenu() {
   const menuButton = document.querySelector(`#menu-button`);
   const nav = document.querySelector(`#main-nav`);
@@ -160,7 +152,6 @@ function setupFooter() {
   if (modified) modified.textContent = `Last modified: ${document.lastModified}`;
 }
 
-// ---------- Page: home ----------
 function setupHome() {
   const featured = document.querySelector(`#featured-tours`);
   const greeting = document.querySelector(`#greeting`);
@@ -177,7 +168,6 @@ function setupHome() {
   }
 }
 
-// ---------- Page: tours ----------
 function setupToursPage() {
   const list = document.querySelector(`#tour-list`);
   const count = document.querySelector(`#tour-count`);
@@ -214,7 +204,6 @@ function handleSave(event, afterSave) {
   afterSave();
 }
 
-// ---------- Page: contact ----------
 function setupContact() {
   const select = document.querySelector(`#tour`);
   const nameInput = document.querySelector(`#full-name`);
@@ -224,7 +213,6 @@ function setupContact() {
   const options = tours.map((tour) => `<option value="${tour.id}">${tour.name}</option>`).join(``);
   select.insertAdjacentHTML(`beforeend`, options);
 
-  // Pre-select the tour when the visitor arrives from a "Request a quote" button
   const requestedTour = new URLSearchParams(window.location.search).get(`tour`);
   if (requestedTour && tours.some((tour) => tour.id === requestedTour)) {
     select.value = requestedTour;
@@ -235,11 +223,9 @@ function setupContact() {
     nameInput.value = visitor;
   }
 
-  // Do not allow dates in the past
   dateInput.min = `${new Date().toISOString().split(`T`)[0]}`;
 }
 
-// ---------- Page: thanks ----------
 function setupThanks() {
   const summary = document.querySelector(`#request-summary`);
   if (!summary) return;
@@ -282,7 +268,6 @@ function setupThanks() {
       : `You have sent ${total} quote requests from this device.`;
 }
 
-// ---------- Start ----------
 setupMenu();
 setupFooter();
 setupHome();
